@@ -41,7 +41,7 @@ namespace FirebaseTest
 
 
             fHelper.PostClass(classs).Wait();
-            //fHelper.GetClass().Wait();
+            fHelper.GetClass().Wait();
 
             //fHelper.DeleteBalance("-LussOeULsaM6kiv37MP").Wait();
             //fHelper.GetBalance().Wait();
@@ -56,7 +56,9 @@ namespace FirebaseTest
 
             var getBalanceTask = fHelper.GetBalance("-LuslVr3yDpLgjux34Rk");
 
+
             Balance balances = getBalanceTask.Result;
+
 
         }
     }
